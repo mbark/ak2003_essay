@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{standalone}         % Better file handling
+\usepackage[                    % References
+        backend=biber
+    ]{biblatex}
+\addbibresource{references.bib}
+
+\begin{document}
+
+\input{Frontpage}
+
+\section{Introduction}
+    \input{Content/1_introduction}
+    
+\section{Essay question}
+    \input{Content/2_question}
+
+\section{Discussion}
+    \input{Content/3_discussion}
+    
+\section{Conclusion}
+    \input{Content/4_conclusion}
+
+\nocite{*}
+\printbibliography
+\end{document}
